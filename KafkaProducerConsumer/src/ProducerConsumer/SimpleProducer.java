@@ -10,6 +10,7 @@ import kafka.producer.ProducerConfig;
 
 public class SimpleProducer {
 	private static Producer<Integer, String> producer;
+	//using Topic - testt
     private static final String topic= "testt";
 
     public void initialize() {

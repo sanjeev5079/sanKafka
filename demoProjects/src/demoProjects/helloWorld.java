@@ -1,6 +1,6 @@
-//Auto build in jenkins - test 2
+//Auto build in jenkins - test
 
-package demoProjects;
+package demoProjects1;
 
 public class helloWorld {
 	//comment

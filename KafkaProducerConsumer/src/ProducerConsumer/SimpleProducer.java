@@ -1,4 +1,4 @@
-//Eclipse-Git inegration demo
+
 package ProducerConsumer;
 
 import java.io.BufferedReader;
@@ -11,9 +11,9 @@ import kafka.producer.ProducerConfig;
 
 public class SimpleProducer {
 	private static Producer<Integer, String> producer;
-	//using Topic - testt.
+	
     private static final String topic= "testt";
-    //init properties
+    
     public void initialize() {
           Properties producerProps = new Properties();
           producerProps.put("metadata.broker.list", "localhost:9092");
@@ -22,7 +22,7 @@ public class SimpleProducer {
           ProducerConfig producerConfig = new ProducerConfig(producerProps);
           producer = new Producer<Integer,String>(producerConfig);
     }
-    // publish messages
+    
     public void publishMesssage() throws Exception{            
           BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));               
       while (true){

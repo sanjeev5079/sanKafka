@@ -12,7 +12,7 @@ import kafka.producer.ProducerConfig;
 public class SimpleProducer {
 	private static Producer<Integer, String> producer;
 	
-    private static final String topic= "testt";
+    private static final String topic= "testt"
     // init props
     public void initialize() {
           Properties producerProps = new Properties();

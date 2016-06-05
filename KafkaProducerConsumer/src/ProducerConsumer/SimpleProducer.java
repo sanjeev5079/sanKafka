@@ -1,4 +1,4 @@
-
+// git-eclipse integration
 package ProducerConsumer;
 
 import java.io.BufferedReader;
@@ -8,12 +8,12 @@ import java.util.Properties;
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;
 import kafka.producer.ProducerConfig;
-
+//producerclass
 public class SimpleProducer {
 	private static Producer<Integer, String> producer;
 	
     private static final String topic= "testt";
-    
+    // init props
     public void initialize() {
           Properties producerProps = new Properties();
           producerProps.put("metadata.broker.list", "localhost:9092");
